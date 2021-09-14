@@ -12,6 +12,7 @@ import daemonReducer from './daemon';
 import { entranceReducer } from './entranceMenu';
 import fullNodeReducer from './fullNode';
 import farmingReducer from './farming';
+import plotterConfigurationReducer from './plotterConfiguration';
 import plotControlReducer from './plotterControl';
 import plotQueueReducer from './plotQueue';
 import plotNFTReducer from './plotNFT';
@@ -31,6 +32,7 @@ const reducers = {
   entrance_menu: entranceReducer,
   full_node_state: fullNodeReducer,
   farming_state: farmingReducer,
+  plotter_configuration: plotterConfigurationReducer,
   plot_control: plotControlReducer,
   progress: progressReducer,
   backup_state: backupReducer,
