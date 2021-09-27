@@ -7,7 +7,7 @@ import {
   AlertDialog,
   Flex,
   Card,
-} from '@chia/core';
+} from '@kujenga/core';
 import {
   Grid,
   Typography,

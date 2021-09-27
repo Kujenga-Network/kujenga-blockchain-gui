@@ -11,8 +11,8 @@ import {
   Plot as PlotIcon,
   Pool as PoolIcon,
   Settings as SettingsIcon,
-} from '@chia/icons';
-import { Flex, SideBarItem } from '@chia/core';
+} from '@kujenga/icons';
+import { Flex, SideBarItem } from '@kujenga/core';
 import { logOut } from '../../modules/message';
 import { RootState } from '../../modules/rootReducer';
 

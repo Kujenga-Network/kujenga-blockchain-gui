@@ -9,7 +9,7 @@ import {
 } from '@material-ui/core';
 import { useWatch, useFormContext } from 'react-hook-form';
 import TextField, { TextFieldProps } from '../TextField';
-import { chia_to_mojo } from '../../../../util/chia';
+import { kujenga_to_dogo } from '../../../../util/kujenga';
 import useCurrencyCode from '../../../../hooks/useCurrencyCode';
 import FormatLargeNumber from '../FormatLargeNumber';
 import Flex from '../Flex';
@@ -40,7 +40,7 @@ function NumberFormatCustom(props: NumberFormatCustomProps) {
 }
 
 export type AmountProps = TextFieldProps & {
-  children?: (props: { mojo: number; value: string | undefined }) => ReactNode;
+  children?: (props: { dogo: number; value: string | undefined }) => ReactNode;
   name?: string;
 };
 
@@ -54,7 +54,7 @@ export default function Amount(props: AmountProps) {
     name,
   });
 
-  const mojo = chia_to_mojo(value);
+  const dogo = kujenga_to_dogo(value);
 
   return (
     <FormControl variant={variant} fullWidth={fullWidth}>
@@ -75,18 +75,18 @@ export default function Amount(props: AmountProps) {
         <FormHelperText component='div' >
           <Flex alignItems="center" gap={2}>
             <Flex flexGrow={1} gap={1}>
-              {!!mojo && (
+              {!!dogo && (
                 <>
-                  <FormatLargeNumber value={mojo} />
+                  <FormatLargeNumber value={dogo} />
                   <Box>
-                    <Plural value={mojo} one="mojo" other="mojos" />
+                    <Plural value={dogo} one="dogo" other="dogos" />
                   </Box>
                 </>
               )}
             </Flex>
             {children &&
               children({
-                mojo,
+                dogo,
                 value,
               })}
           </Flex>

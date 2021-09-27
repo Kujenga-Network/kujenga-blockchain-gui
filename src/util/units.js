@@ -1,21 +1,21 @@
 const units = {
-  chia: 1,
-  mojo: 1 / 1e12,
+  kujenga: 1,
+  dogo: 1 / 1e12,
   colouredcoin: 1 / 1e9,
 };
 
 const aliases = {
-  chia: ['ch', 'chia', 'Chia'],
-  mojo: ['mj', 'mojo'],
+  kujenga: ['ch', 'kujenga', 'Kujenga'],
+  dogo: ['mj', 'dogo'],
   colouredcoin: ['cc', 'colouredcoin'],
 };
 
 const display = {
-  chia: {
+  kujenga: {
     format: '{amount} CH',
     fractionDigits: 12,
   },
-  mojo: {
+  dogo: {
     format: '{amount} MJ',
     fractionDigits: 0,
   },
