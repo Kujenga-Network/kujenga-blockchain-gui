@@ -34,6 +34,8 @@ const StyledLink = styled.a`
 
 const StyledLogoContainer = styled.div`
   width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 
   img {
     height: 200px;
@@ -70,7 +72,7 @@ const Spacer = styled.div`
   margin-bottom: 1rem;
 `;
 
-const url = 'https://kujenga.net';
+const url = 'https://kujenga.xyz';
 
 type Props = {
   version: string;

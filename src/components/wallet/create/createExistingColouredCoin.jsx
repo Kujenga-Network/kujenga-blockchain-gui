@@ -19,7 +19,7 @@ import {
   CREATE_CC_WALLET_OPTIONS,
 } from '../../../modules/createWallet';
 import { useStyles } from './WalletCreate';
-import { kujenga_to_dogo } from '../../../util/kujenga';
+import { kujenga_to_moja } from '../../../util/kujenga';
 import { create_cc_for_colour_action } from '../../../modules/message';
 import { openDialog } from '../../../modules/dialog';
 
@@ -75,7 +75,7 @@ export const CreateExistingCCWallet = () => {
     }
     dispatch(createState(true, true));
     const colour = colour_string.value;
-    const fee = kujenga_to_dogo(fee_input.value);
+    const fee = kujenga_to_moja(fee_input.value);
     dispatch(create_cc_for_colour_action(colour, fee));
   }
 

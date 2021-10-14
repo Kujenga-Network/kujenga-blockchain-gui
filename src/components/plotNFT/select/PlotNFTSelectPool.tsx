@@ -11,7 +11,7 @@ import PlotNFTSelectBase from './PlotNFTSelectBase';
 import normalizeUrl from '../../../util/normalizeUrl';
 import getPoolInfo from '../../../util/getPoolInfo';
 import InitialTargetState from '../../../types/InitialTargetState';
-import { kujenga_to_dogo } from '../../../util/kujenga';
+import { kujenga_to_moja } from '../../../util/kujenga';
 import useStandardWallet from '../../../hooks/useStandardWallet';
 import PlotNFTSelectFaucet from './PlotNFTSelectFaucet';
 
@@ -43,10 +43,10 @@ async function prepareSubmitData(data: FormData): SubmitData {
     initialTargetState.relative_lock_height = relative_lock_height;
   }
 
-  const feeDogos = kujenga_to_dogo(fee);
+  const feeMojas = kujenga_to_moja(fee);
 
   return {
-    fee: feeDogos,
+    fee: feeMojas,
     initialTargetState,
   };
 }

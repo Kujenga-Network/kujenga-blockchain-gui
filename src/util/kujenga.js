@@ -83,32 +83,32 @@ kujenga_formatter.setFiat = (currency, rate, display = null) => {
   units.setUnit(currency, 1 / rate, display);
 };
 
-export const dogo_to_kujenga = (dogo) => {
-  return kujenga_formatter(Number.parseInt(dogo), 'dogo').to('kujenga').value();
+export const moja_to_kujenga = (moja) => {
+  return kujenga_formatter(Number.parseInt(moja), 'moja').to('kujenga').value();
 };
 
-export const kujenga_to_dogo = (kujenga) => {
+export const kujenga_to_moja = (kujenga) => {
   return kujenga_formatter(Number.parseFloat(Number(kujenga)), 'kujenga')
-    .to('dogo')
+    .to('moja')
     .value();
 };
 
-export const dogo_to_kujenga_string = (dogo) => {
-  return kujenga_formatter(Number(dogo), 'dogo').to('kujenga').toString();
+export const moja_to_kujenga_string = (moja) => {
+  return kujenga_formatter(Number(moja), 'moja').to('kujenga').toString();
 };
 
-export const dogo_to_colouredcoin = (dogo) => {
-  return kujenga_formatter(Number.parseInt(dogo), 'dogo')
+export const moja_to_colouredcoin = (moja) => {
+  return kujenga_formatter(Number.parseInt(moja), 'moja')
     .to('colouredcoin')
     .value();
 };
 
-export const colouredcoin_to_dogo = (colouredcoin) => {
+export const colouredcoin_to_moja = (colouredcoin) => {
   return kujenga_formatter(Number.parseFloat(Number(colouredcoin)), 'colouredcoin')
-    .to('dogo')
+    .to('moja')
     .value();
 };
 
-export const dogo_to_colouredcoin_string = (dogo) => {
-  return kujenga_formatter(Number(dogo), 'dogo').to('colouredcoin').toString();
+export const moja_to_colouredcoin_string = (moja) => {
+  return kujenga_formatter(Number(moja), 'moja').to('colouredcoin').toString();
 };

@@ -354,35 +354,35 @@ if (!handleSquirrelEvent()) {
         label: i18n._(/* i18n */ { id: 'Help' }),
         role: 'help',
         submenu: [
+          // {
+          //   label: i18n._(/* i18n */ { id: 'Kujenga Blockchain Wiki' }),
+          //   click: () => {
+          //     openExternal(
+          //       'https://github.com/Kujenga-Network/kujenga-blockchain/wiki',
+          //     );
+          //   },
+          // },
+          // {
+          //   label: i18n._(/* i18n */ { id: 'Frequently Asked Questions' }),
+          //   click: () => {
+          //     openExternal(
+          //       'https://github.com/Kujenga-Network/kujenga-blockchain/wiki/FAQ',
+          //     );
+          //   },
+          // },
+          // {
+          //   label: i18n._(/* i18n */ { id: 'Release Notes' }),
+          //   click: () => {
+          //     openExternal(
+          //       'https://github.com/Kujenga-Network/kujenga-blockchain/releases',
+          //     );
+          //   },
+          // },
           {
-            label: i18n._(/* i18n */ { id: 'Kujenga Blockchain Wiki' }),
+            label: i18n._(/* i18n */ { id: 'Kujenga on GitHub' }),
             click: () => {
               openExternal(
-                'https://github.com/Kujenga-Network/kujenga-blockchain/wiki',
-              );
-            },
-          },
-          {
-            label: i18n._(/* i18n */ { id: 'Frequently Asked Questions' }),
-            click: () => {
-              openExternal(
-                'https://github.com/Kujenga-Network/kujenga-blockchain/wiki/FAQ',
-              );
-            },
-          },
-          {
-            label: i18n._(/* i18n */ { id: 'Release Notes' }),
-            click: () => {
-              openExternal(
-                'https://github.com/Kujenga-Network/kujenga-blockchain/releases',
-              );
-            },
-          },
-          {
-            label: i18n._(/* i18n */ { id: 'Contribute on GitHub' }),
-            click: () => {
-              openExternal(
-                'https://github.com/Kujenga-Network/kujenga-blockchain/blob/master/CONTRIBUTING.md',
+                'https://github.com/Kujenga-Network/kujenga-blockchain/',
               );
             },
           },
@@ -398,17 +398,17 @@ if (!handleSquirrelEvent()) {
             },
           },
           {
-            label: i18n._(/* i18n */ { id: 'Chat on KeyBase' }),
+            label: i18n._(/* i18n */ { id: 'Chat on Discord' }),
             click: () => {
-              openExternal('https://keybase.io/team/kujenga_network.public');
+              openExternal('https://discord.gg/tFJdUeJgXk');
             },
           },
-          {
-            label: i18n._(/* i18n */ { id: 'Follow on Twitter' }),
-            click: () => {
-              openExternal('https://twitter.com/kujenga_project');
-            },
-          },
+          // {
+          //   label: i18n._(/* i18n */ { id: 'Follow on Twitter' }),
+          //   click: () => {
+          //     openExternal('https://twitter.com/kujenga_project');
+          //   },
+          // },
         ],
       },
     ];

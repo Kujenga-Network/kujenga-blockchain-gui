@@ -4,8 +4,8 @@ import { Box, Tooltip, Typography } from '@material-ui/core';
 import { Card, CopyToClipboard, Flex, Table } from '@kujenga/core';
 import type { Row } from '../core/components/Table/Table';
 import {
-  dogo_to_kujenga_string,
-  dogo_to_colouredcoin_string,
+  moja_to_kujenga_string,
+  moja_to_colouredcoin_string,
 } from '../../util/kujenga';
 import { unix_to_short_date } from '../../util/utils';
 import TransactionType from '../../constants/TransactionType';
@@ -57,12 +57,12 @@ const getCols = (type: WalletType) => [
   {
     field: (row: Row) =>
       type === WalletType.COLOURED_COIN
-        ? dogo_to_colouredcoin_string(row.amount)
-        : dogo_to_kujenga_string(row.amount),
+        ? moja_to_colouredcoin_string(row.amount)
+        : moja_to_kujenga_string(row.amount),
     title: <Trans>Amount</Trans>,
   },
   {
-    field: (row: Row) => dogo_to_kujenga_string(row.fee_amount),
+    field: (row: Row) => moja_to_kujenga_string(row.fee_amount),
     title: <Trans>Fee</Trans>,
   },
 ];

@@ -29,7 +29,7 @@ import {
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Tooltip } from '@material-ui/core';
 import HelpIcon from '@material-ui/icons/Help';
-import { dogo_to_kujenga_string } from '../../../util/kujenga';
+import { moja_to_kujenga_string } from '../../../util/kujenga';
 import { useForm, Controller, useFieldArray } from 'react-hook-form';
 import { openDialog } from '../../../modules/dialog';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
@@ -613,7 +613,7 @@ const BalanceCardSubSection = (props) => {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {dogo_to_kujenga_string(props.balance)} TXKJ
+            {moja_to_kujenga_string(props.balance)} TXKJ
           </Typography>
         </Box>
       </Box>

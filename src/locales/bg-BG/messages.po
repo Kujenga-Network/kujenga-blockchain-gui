@@ -3009,5 +3009,5 @@ msgid "{currencyCode} User Transaction Fees"
 msgstr "{currencyCode} Такси на потребителя за транзакции"
 
 #: src/components/core/components/Amount/Amount.tsx:82
-msgid "{dogo, plural, one {dogo} other {dogos}}"
+msgid "{moja, plural, one {moja} other {mojas}}"
 msgstr ""

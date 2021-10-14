@@ -13,7 +13,7 @@ import {
 } from '../../../modules/createWallet';
 import { useDispatch } from 'react-redux';
 import { create_did_action } from '../../../modules/message';
-import { kujenga_to_dogo } from '../../../util/kujenga';
+import { kujenga_to_moja } from '../../../util/kujenga';
 import { openDialog } from '../../../modules/dialog';
 import { useForm, Controller, useFieldArray } from 'react-hook-form';
 import { Help as HelpIcon } from '@material-ui/icons';
@@ -37,7 +37,7 @@ export default function WalletDIDCreate() {
       const didArray = data.backup_dids?.map((item) => item.backupid) ?? [];
       let uniqDidArray = Array.from(new Set(didArray));
       uniqDidArray = uniqDidArray.filter(item => item !== "")
-      const amount_val = kujenga_to_dogo(data.amount);
+      const amount_val = kujenga_to_moja(data.amount);
       if (
         amount_val === '' ||
         Number(amount_val) === 0 ||
@@ -116,7 +116,7 @@ export default function WalletDIDCreate() {
                 <Typography variant="subtitle1">
                   Enter amount
                 </Typography>
-                <Tooltip title="The amount of Kujenga you enter must correspond to an even amount of dogos. One additional dogo will be added to the total amount for security purposes.">
+                <Tooltip title="The amount of Kujenga you enter must correspond to an even amount of mojas. One additional moja will be added to the total amount for security purposes.">
                   <HelpIcon style={{ color: '#c8c8c8', fontSize: 12 }} />
                 </Tooltip>
               </Flex>
@@ -131,9 +131,9 @@ export default function WalletDIDCreate() {
                     {() => (
                       <Flex display="flex" gap={1} alignItems="center">
                         <div>
-                          + 1 dogo
+                          + 1 moja
                         </div>
-                        <Tooltip title="This additional dogo will be added to the total amount for security purposes.">
+                        <Tooltip title="This additional moja will be added to the total amount for security purposes.">
                           <HelpIcon style={{ color: '#c8c8c8', fontSize: 12 }} />
                         </Tooltip>
                       </Flex>

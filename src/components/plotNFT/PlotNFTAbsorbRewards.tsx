@@ -21,7 +21,7 @@ import usePlotNFTs from '../../hooks/usePlotNFTs';
 import { pwAbsorbRewards } from '../../modules/plotNFT';
 import { SubmitData } from './select/PlotNFTSelectPool';
 import PlotNFTName from './PlotNFTName';
-import { dogo_to_kujenga, kujenga_to_dogo } from '../../util/kujenga';
+import { moja_to_kujenga, kujenga_to_moja } from '../../util/kujenga';
 import useStandardWallet from '../../hooks/useStandardWallet';
 
 type FormData = {
@@ -64,13 +64,13 @@ export default function PlotNFTAbsorbRewards(props: Props) {
 
       const { fee } = data;
 
-      const feeDogos = kujenga_to_dogo(fee);
+      const feeMojas = kujenga_to_moja(fee);
 
       if (walletId === undefined || !address) {
         return;
       }
 
-      await dispatch(pwAbsorbRewards(walletId, feeDogos));
+      await dispatch(pwAbsorbRewards(walletId, feeMojas));
 
       if (history.length) {
         history.goBack();
@@ -137,7 +137,7 @@ export default function PlotNFTAbsorbRewards(props: Props) {
               <Trans>
                 You will recieve{' '}
                 <UnitFormat
-                  value={dogo_to_kujenga(BigInt(balance))}
+                  value={moja_to_kujenga(BigInt(balance))}
                   display="inline"
                   state={State.SUCCESS}
                 />{' '}

@@ -1,5 +1,5 @@
 # kujenga-blockchain
-![Alt text](https://www.kujenga.net/img/kujenga_logo.svg)
+![Alt text](https://www.kujenga.xyz/img/kujenga_logo.svg)
 
 ![GitHub contributors](https://img.shields.io/github/contributors/Kujenga-Network/kujenga-blockchain?logo=GitHub)
 

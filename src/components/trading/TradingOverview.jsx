@@ -17,7 +17,7 @@ import Grid from '@material-ui/core/Grid';
 import HelpIcon from '@material-ui/icons/Help';
 import { unix_to_short_date } from '../../util/utils';
 import { presetOverview, presentTrade } from '../../modules/trade';
-import { dogo_to_kujenga_string } from '../../util/kujenga';
+import { moja_to_kujenga_string } from '../../util/kujenga';
 import {
   get_all_trades,
   cancel_trade_with_spend_action,
@@ -301,7 +301,7 @@ const OfferRow = (props) => {
       </Box>
       <Box flexGrow={1}>{side}</Box>
       <Box flexGrow={1} style={{ textAlign: 'right' }}>
-        {dogo_to_kujenga_string(amount)}
+        {moja_to_kujenga_string(amount)}
       </Box>
     </Box>
   );

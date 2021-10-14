@@ -18,7 +18,7 @@ import {
   send_transaction,
   rl_set_user_info_action,
 } from '../../../modules/message';
-import { dogo_to_kujenga_string, kujenga_to_dogo } from '../../../util/kujenga';
+import { moja_to_kujenga_string, kujenga_to_moja } from '../../../util/kujenga';
 import { get_transaction_result } from '../../../util/transaction_result';
 import { openDialog } from '../../../modules/dialog';
 import WalletHistory from '../WalletHistory';
@@ -400,7 +400,7 @@ const RLDetailsCard = (props) => {
               <Typography variant="subtitle1">
                 <Trans>
                   Spending Limit (kujenga per interval):{' '}
-                  {dogo_to_kujenga_string(limit)}
+                  {moja_to_kujenga_string(limit)}
                 </Trans>
               </Typography>
             </Box>
@@ -447,7 +447,7 @@ const RLDetailsCard = (props) => {
               <Typography variant="subtitle1">
                 <Trans>
                   Spending Limit (kujenga per interval):{' '}
-                  {dogo_to_kujenga_string(limit)}
+                  {moja_to_kujenga_string(limit)}
                 </Trans>
               </Typography>
             </Box>
@@ -512,7 +512,7 @@ const BalanceCardSubSection = (props) => {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {dogo_to_kujenga_string(props.balance)} {currencyCode}
+            {moja_to_kujenga_string(props.balance)} {currencyCode}
           </Typography>
         </Box>
       </Box>
@@ -652,8 +652,8 @@ const SendCard = (props) => {
       );
       return;
     }
-    const amount = kujenga_to_dogo(amount_input.value);
-    const fee = kujenga_to_dogo(fee_input.value);
+    const amount = kujenga_to_moja(amount_input.value);
+    const fee = kujenga_to_moja(fee_input.value);
 
     if (address.startsWith('0x') || address.startsWith('0X')) {
       address = address.slice(2);

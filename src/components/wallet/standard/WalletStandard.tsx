@@ -42,7 +42,7 @@ import {
   send_transaction,
   farm_block,
 } from '../../../modules/message';
-import { /* dogo_to_kujenga_string, */ kujenga_to_dogo } from '../../../util/kujenga';
+import { /* moja_to_kujenga_string, */ kujenga_to_moja } from '../../../util/kujenga';
 import { openDialog } from '../../../modules/dialog';
 import { get_transaction_result } from '../../../util/transaction_result';
 import config from '../../../config/config';
@@ -238,7 +238,7 @@ function BalanceCardSubSection(props: BalanceCardSubSectionProps) {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {dogo_to_kujenga_string(props.balance)} {currencyCode}
+            {moja_to_kujenga_string(props.balance)} {currencyCode}
           </Typography>
         </Box>
       </Box>
@@ -463,8 +463,8 @@ function SendCard(props: SendCardProps) {
       address = address.slice(2);
     }
 
-    const amountValue = Number.parseFloat(kujenga_to_dogo(amount));
-    const feeValue = Number.parseFloat(kujenga_to_dogo(fee));
+    const amountValue = Number.parseFloat(kujenga_to_moja(amount));
+    const feeValue = Number.parseFloat(kujenga_to_moja(fee));
 
     dispatch(send_transaction(wallet_id, amountValue, feeValue, address));
 

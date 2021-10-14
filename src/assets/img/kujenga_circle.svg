@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.0" width="1024px" height="1024px" viewBox="0 0 1024 1024" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
   <defs>
     <bx:guide x="95.991" y="40.703" angle="0"/>
     <bx:guide x="-17.236" y="1.44" angle="0"/>
     <bx:guide x="24.505" y="48.647" angle="90"/>
     <bx:guide x="15.565" y="37.14" angle="90"/>
   </defs>
-  <circle style="fill: rgb(255, 255, 255);" cx="508.632" cy="511.328" r="509.28"/>
-  <g transform="matrix(1.378847, 0, 0, 1.378847, -261.532471, -245.391037)" style="">
+  <g transform="matrix(0.740607, 0, 0, 0.740607, -165.624023, -130.161682)" style="">
     <path d="M 451.978 351.432 L 598.773 351.432 L 672.987 223.074 L 526.192 223.074 L 451.978 351.432 Z" style="fill: rgb(71, 71, 208); stroke-width: 0.268244px;" transform="matrix(0.866182, 0.499728, -0.499728, 0.866182, 218.818528, -242.648802)"/>
     <path d="M 528.333 485.146 L 675.128 485.146 L 749.342 356.788 L 602.547 356.788 L 528.333 485.146 Z" style="stroke-width: 0.268244px; fill: rgb(71, 71, 208);" transform="matrix(-0.86573, 0.500511, -0.500511, -0.86573, 1402.597011, 465.665489)"/>
     <path d="M 372.247 356.787 L 519.042 356.787 L 593.246 485.146 L 446.451 485.146 L 372.247 356.787 Z" style="stroke-width: 0.268244px; fill: rgb(71, 71, 208);" transform="matrix(0.86573, 0.500511, -0.500511, 0.86573, 275.516761, -185.096872)"/>

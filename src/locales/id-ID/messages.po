@@ -3009,5 +3009,5 @@ msgid "{currencyCode} User Transaction Fees"
 msgstr "{currencyCode} Biaya Transaksi User"
 
 #: src/components/core/components/Amount/Amount.tsx:82
-msgid "{dogo, plural, one {dogo} other {dogos}}"
-msgstr "{dogo, plural, other {dogo}}"
+msgid "{moja, plural, one {moja} other {mojas}}"
+msgstr "{moja, plural, other {moja}}"

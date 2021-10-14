@@ -1,12 +1,12 @@
 const units = {
   kujenga: 1,
-  dogo: 1 / 1e12,
+  moja: 1 / 1e12,
   colouredcoin: 1 / 1e9,
 };
 
 const aliases = {
   kujenga: ['ch', 'kujenga', 'Kujenga'],
-  dogo: ['mj', 'dogo'],
+  moja: ['mj', 'moja'],
   colouredcoin: ['cc', 'colouredcoin'],
 };
 
@@ -15,7 +15,7 @@ const display = {
     format: '{amount} CH',
     fractionDigits: 12,
   },
-  dogo: {
+  moja: {
     format: '{amount} MJ',
     fractionDigits: 0,
   },

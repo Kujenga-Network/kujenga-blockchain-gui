@@ -20,7 +20,7 @@ import {
 } from '../../../modules/createWallet';
 import { useStyles } from './WalletCreate';
 import { create_rl_admin_action } from '../../../modules/message';
-import { kujenga_to_dogo } from '../../../util/kujenga';
+import { kujenga_to_moja } from '../../../util/kujenga';
 import { openDialog } from '../../../modules/dialog';
 
 export const customStyles = makeStyles((theme) => ({
@@ -156,12 +156,12 @@ export const CreateRLAdminWallet = () => {
     dispatch(createState(true, true));
     const interval = interval_input.value;
     const interval_value = Number.parseInt(Number(interval));
-    const kujengaper = kujenga_to_dogo(kujengaper_input.value);
+    const kujengaper = kujenga_to_moja(kujengaper_input.value);
     const kujengaper_value = Number.parseInt(Number(kujengaper));
     const userpubkey = userpubkey_input.value;
-    const amount = kujenga_to_dogo(amount_input.value);
+    const amount = kujenga_to_moja(amount_input.value);
     const amount_value = Number.parseInt(Number(amount));
-    // var fee = kujenga_to_dogo(fee_input.value);
+    // var fee = kujenga_to_moja(fee_input.value);
     // TODO(lipa): send fee to server
     // const fee_value = parseInt(Number(fee));
     dispatch(

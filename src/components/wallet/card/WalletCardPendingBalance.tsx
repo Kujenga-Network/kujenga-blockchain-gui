@@ -3,7 +3,7 @@ import { Trans } from '@lingui/macro';
 import FarmCard from '../../farm/card/FarmCard';
 import useWallet from '../../../hooks/useWallet';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
-import { dogo_to_kujenga_string } from '../../../util/kujenga';
+import { moja_to_kujenga_string } from '../../../util/kujenga';
 
 type Props = {
   wallet_id: number;
@@ -31,7 +31,7 @@ export default function WalletCardPendingBalance(props: Props) {
       }
       value={
         <span>
-          {dogo_to_kujenga_string(value)} {currencyCode}
+          {moja_to_kujenga_string(value)} {currencyCode}
         </span>
       }
     />

@@ -20,7 +20,7 @@ import {
 } from '../../../modules/createWallet';
 import { useStyles } from './WalletCreate';
 import { create_cc_action } from '../../../modules/message';
-import { kujenga_to_dogo } from '../../../util/kujenga';
+import { kujenga_to_moja } from '../../../util/kujenga';
 import { openDialog } from '../../../modules/dialog';
 
 export const customStyles = makeStyles((theme) => ({
@@ -83,8 +83,8 @@ export const CreateNewCCWallet = () => {
       return;
     }
     dispatch(createState(true, true));
-    const amount = kujenga_to_dogo(amount_input.value);
-    const fee = kujenga_to_dogo(fee_input.value);
+    const amount = kujenga_to_moja(amount_input.value);
+    const fee = kujenga_to_moja(fee_input.value);
     dispatch(create_cc_action(amount, fee));
   }
 

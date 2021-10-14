@@ -9,7 +9,7 @@ import useWallet from '../../hooks/useWallet';
 import TransactionType from '../../constants/TransactionType';
 import type Transaction from '../../types/Transaction';
 import type Peak from '../../types/Peak';
-import { dogo_to_kujenga } from '../../util/kujenga';
+import { moja_to_kujenga } from '../../util/kujenga';
 import usePeak from '../../hooks/usePeak';
 import useCurrencyCode from '../../hooks/useCurrencyCode';
 import blockHeightToTimestamp from '../../util/blockHeightToTimestamp';
@@ -197,8 +197,8 @@ function prepareGraphPoints(
   const points = [
     {
       x: peak.height,
-      y: Math.max(0, dogo_to_kujenga(start)),
-      tooltip: dogo_to_kujenga(balance),
+      y: Math.max(0, moja_to_kujenga(start)),
+      tooltip: moja_to_kujenga(balance),
     },
   ];
 
@@ -209,8 +209,8 @@ function prepareGraphPoints(
 
     points.push({
       x: timestamp,
-      y: Math.max(0, dogo_to_kujenga(start)),
-      tooltip: dogo_to_kujenga(start),
+      y: Math.max(0, moja_to_kujenga(start)),
+      tooltip: moja_to_kujenga(start),
     });
   });
 

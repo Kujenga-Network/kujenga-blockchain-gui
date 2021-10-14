@@ -3,7 +3,7 @@ import { Trans } from '@lingui/macro';
 import { useSelector } from 'react-redux';
 import type { RootState } from '../../../modules/rootReducer';
 import FarmCard from './FarmCard';
-import { dogo_to_kujenga } from '../../../util/kujenga';
+import { moja_to_kujenga } from '../../../util/kujenga';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
 
 export default function FarmCardUserFees() {
@@ -19,7 +19,7 @@ export default function FarmCardUserFees() {
   const userTransactionFees = useMemo(() => {
     if (feeAmount !== undefined) {
       const val = BigInt(feeAmount.toString());
-      return dogo_to_kujenga(val);
+      return moja_to_kujenga(val);
     }
   }, [feeAmount]);
 

@@ -74,7 +74,7 @@ export default function Dashboard() {
       </StyledAppBar>
       <StyledDrawer variant="permanent">
         <StyledBrandWrapper>
-          <Logo width={2 / 3} />
+          <Logo width={3 / 3} />
         </StyledBrandWrapper>
         <Divider />
         <DashboardSideBar />

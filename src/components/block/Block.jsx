@@ -28,7 +28,7 @@ import {
   sha256,
 } from '../../util/utils';
 import { getBlockRecord, getBlock } from '../../modules/fullnodeMessages';
-import { dogo_to_kujenga } from '../../util/kujenga';
+import { moja_to_kujenga } from '../../util/kujenga';
 import {
   calculatePoolReward,
   calculateBaseFarmerReward,
@@ -172,13 +172,13 @@ export default function Block() {
       ? blockRecord.weight - prevBlockRecord.weight
       : blockRecord?.weight ?? 0;
 
-  const poolReward = dogo_to_kujenga(calculatePoolReward(blockRecord.height));
-  const baseFarmerReward = dogo_to_kujenga(
+  const poolReward = moja_to_kujenga(calculatePoolReward(blockRecord.height));
+  const baseFarmerReward = moja_to_kujenga(
     calculateBaseFarmerReward(blockRecord.height),
   );
 
   const kujengaFees = blockRecord.fees
-    ? dogo_to_kujenga(BigInt(blockRecord.fees))
+    ? moja_to_kujenga(BigInt(blockRecord.fees))
     : '';
 
   const rows = [
